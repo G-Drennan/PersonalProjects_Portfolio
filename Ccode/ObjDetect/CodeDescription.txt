@@ -1,0 +1,21 @@
+Take user input from the command line
+If wrong input print “Incorrect input”.
+Else if input ‘s’ and a txt file 
+	Print the calibrate information from the txt file. 
+Else if input ‘c’ and an image file
+	Find the mid and diff hue from the middle 50 pixels
+	Print this information to the terminal along with the file name and the saturation
+    and value.
+Else if input ‘d’, a txt file and an image file
+	From the txt file retrieve the mid and diff hue, the saturation, the value, and the
+    object name.
+    Copy the image.
+    For each object
+        Create a binary matrix that identifies where the object if found by matching
+        the pixel hue to equal mid hue ± diff hue, greater than value and the
+        saturation.
+        While there is still objects(ones) in the matrix find the object min coordinates, 
+            and its height and width. This info is used to draw a box around the object on 
+            the copied image.
+            After an object is found remove it from the matrix and find the next object.
+

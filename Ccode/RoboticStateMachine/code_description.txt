@@ -1,0 +1,32 @@
+Take a number from the command line. 
+If no number in the commend line print a 
+message and end program. This number is the amount 
+of state machines that will be initialized.
+
+For the number of state machines collect input 
+    Ensure that the state machine is valid;
+    -	There is a zero state machine id and that its 
+        first state machine is 0 
+    -	Each state machine id has non ambiguous transitions.
+    -	The states are a number 0-19 and that the 
+        transitions signals are 0-4.
+
+If a state machine isn’t valid print a relevant message and exit.
+
+print what state machine ids have been initialized.
+
+While there is input collect the input.   
+
+    Ensure the state machine ID is one that was initialized initially.
+    
+    Depending on the type of command input display the relevant information.
+    SM; displays what state its transitioning from to the state its 
+        transitioning to. Then runs the relevant program of the next state.
+    QM; has three types of queries
+    a; shows the number of transitions, states and states ids 
+        in ascending order of a states machine id.
+    t; shows current valid transition signals of a states machine id.
+    s; shows the current state of a state machine id.
+
+
+
